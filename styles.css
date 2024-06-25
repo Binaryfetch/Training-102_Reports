@@ -1,0 +1,295 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(163, 186, 222);
+    background: linear-gradient(90deg, rgba(163, 186, 222, 1) 0%, rgba(52, 81, 204, 1) 70%);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: transparent;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    transition: margin-bottom 2s ease; /* Transition for margin-bottom */
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 2s ease; /* Transition for background color */
+}
+
+.day:hover {
+    background-color: #1b3d61;
+}
+
+.day.sunday {
+    background-color: rgb(217, 122, 122); /* Color for Sundays */
+}
+
+.day.no-link {
+    background-color: #80abc7; /* Color for days with no PDF link */
+    opacity: 0.8; /* Reduced opacity for non-clickable days */
+}
+
+.day.holiday.june-10 {
+    background-color: rgb(217, 122, 122); /* Color for June 10 holiday */
+}
+
+.day.holiday.june-17 {
+    background-color: rgb(217, 122, 122); /* Color for June 17 holiday */
+}
+
+.day.holiday.june-22 {
+    background-color: rgb(217, 122, 122); /* Color for June 22 holiday */
+}
+
+#entry-details {
+    margin-top: 20px;
+    transition: margin-top 2s ease; /* Transition for margin-top */
+}
+
+#entry-date {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    transition: font-size 2s ease, margin-bottom 2s ease; /* Transition for font-size and margin-bottom */
+}
+
+#additional-info {
+    margin-top: 10px;
+    display: none;
+    background-color: #2e578d;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 2s ease; /* Transition for background color */
+}
+
+#download-link {
+    display: none;
+    padding: 10px 20px;
+    background-color:#1b3d61;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 2s ease; /* Transition for background color */
+}
+
+#download-link:hover {
+    background-color: #0056b3;
+}
+
+.button-container {
+    display: flex;
+    margin-left: 80px;
+    gap: 400px; /* Space between buttons */
+    margin-bottom: 20px;
+}
+
+.pdf-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #80abc7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: -50px;
+    transition: background-color 2s ease; /* Transition for background color */
+}
+
+.pdf-button:hover {
+    background-color: #2e578d;
+}
+
+.day-name {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #2e578d;
+    color: #fff;
+}
+
+.logo-container {
+    flex: 0 0 auto; /* Prevent logo from growing */
+    margin-right: 20px; /* Adjust spacing between logo and text */
+}
+
+.logo {
+    height: 100px;
+    transition: margin-left 2s ease; /* Transition for margin-left */
+    margin-left: 40px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.clg-name {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: -40px
+}
+
+.address {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.holiday1 {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    margin-top: 20px;
+}
+
+.holiday2 {
+    background-color: #80abc7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    transition: background-color 2s ease; /* Transition for background color */
+}
+
+.footer {
+    background-color: #2e578d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    flex-wrap: wrap; /* Wrap content if it exceeds width */
+}
+
+.footer h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    display: inline-block; /* Display paragraphs inline */
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+.company-logo {
+    margin-top: 10px;
+}
+
+.company-logo a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.company-logo img {
+    
+    height: 50px;
+}
+.name{
+text-align: center;
+font-weight: bold;
+font-size: 40px;
+margin-top: 40px;
+}
+
+/* General styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 95%; /* Adjust maximum width for smaller screens */
+        margin: 10px auto; /* Reduce margins for smaller screens */
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        align-items: center; /* Center-align buttons */
+        gap: 10px; /* Reduce gap between buttons */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .pdf-button {
+        margin-left: 0; /* Adjust button margin for smaller screens */
+    }
+
+    .logo {
+        height: 80px; /* Decrease logo height */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .header-text {
+        margin-top: -30px; /* Adjust margin-top for header text */
+    }
+
+    .clg-name {
+        margin-top: -30px; /* Adjust margin-top for college name */
+    }
+
+    .address {
+        margin-top: 0; /* Adjust margin-top for address */
+    }
+
+    .holiday1 {
+        flex-direction: column; /* Stack holidays vertically */
+    }
+
+    .holiday2 {
+        margin-bottom: 10px; /* Increase margin-bottom for holiday blocks */
+    }
+
+    .footer {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center-align footer items */
+        padding: 10px; /* Decrease padding */
+    }
+
+    .footer h3 {
+        font-size: 1em; /* Decrease font size for footer headings */
+    }
+
+    .social-icons img {
+        width: 25px; /* Decrease size of social icons */
+        height: 25px;
+    }
+
+    .company-logo img {
+        height: 40px; /* Decrease size of company logos */
+    }
+
+    .name {
+        font-size: 30px; /* Decrease font size for name */
+        margin-top: 20px; /* Adjust margin-top for name */
+    }
+}
