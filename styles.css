@@ -99,26 +99,29 @@ h1 {
 
 .button-container {
     display: flex;
-    margin-left: 80px;
-    gap: 400px; /* Space between buttons */
+    justify-content: space-between; /* Distribute items evenly, placing them at each end */
+    align-items: center; /* Center items vertically */
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
 .pdf-button {
     padding: 10px 20px;
     font-size: 16px;
-    color: #000000;
+    color: black;
     background-color: #80abc7;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: -50px;
-    transition: background-color 2s ease; /* Transition for background color */
+    transition: background-color 0.3s ease; /* Adjust transition duration */
+    text-decoration: none;
 }
 
 .pdf-button:hover {
     background-color: #2e578d;
 }
+
+
 
 .day-name {
     text-align: center;
