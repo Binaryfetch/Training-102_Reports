@@ -57,8 +57,32 @@ const pdfLinks = {
     '2024-06-21': {
         pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/21June.pdf',
         additionalInfo: 'Handling POST requests and exploring middleware'
+    },
+    '2024-06-27': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/27june.pdf',
+        additionalInfo: 'Express.js'
+    },
+    '2024-06-28': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/28%20June.pdf',
+        additionalInfo: 'Incomping Request and format json '
+    },
+    '2024-06-29': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/29july.pdf',
+        additionalInfo: 'Module Route '
+    },
+    '2024-07-2': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/2july.pdf',
+        additionalInfo: 'Model MongoDB '
+    },
+    '2024-07-3': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/3July.pdf',
+        additionalInfo: 'Typescript '
+    },
+    '2024-07-4': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/4July.pdf',
+        additionalInfo: 'Typescript and code quality'
     }
-    // Add more dates and corresponding PDF links and additional info as needed
+    
 };
 
 function generateCalendar() {
