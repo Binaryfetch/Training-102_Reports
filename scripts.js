@@ -58,6 +58,18 @@ const pdfLinks = {
         pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/21June.pdf',
         additionalInfo: 'Handling POST requests and exploring middleware'
     },
+    '2024-06-24': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/21June.pdf',
+        additionalInfo: 'Handling POST requests and exploring middleware'
+    },
+    '2024-06-25': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/21June.pdf',
+        additionalInfo: 'Handling POST requests and exploring middleware'
+    },
+    '2024-06-26': {
+        pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/21June.pdf',
+        additionalInfo: 'Handling POST requests and exploring middleware'
+    },
     '2024-06-27': {
         pdfLink: 'https://github.com/Binaryfetch/Training-102_Reports/raw/main/27june.pdf',
         additionalInfo: 'Express.js'
